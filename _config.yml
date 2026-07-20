@@ -13,19 +13,21 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
+title: Greytak Chemistry Laboratory GitHub
+email: greytak@sc.edu
+locale: "en-US"
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
+  We develop quantum dots and other semiconductor nanomaterials at the University of South Carolina. 
+#twitter_username: username
+github_username: Greytak-Chemistry-Lab
+minimal_mistakes_skin: dark
 search: true
 
 # Build settings
 markdown: kramdown
+kramdown: 
+    input: GFM
+    math_engine: mathjax    
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
@@ -58,34 +60,34 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name   : "Greytak Lab"
+  avatar : "/assets/images/optical-construction.jpg"
+  bio    : "Physical and materials chemistry at the University of South Carolina (site under construction)."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://sc.edu/study/colleges_schools/chemistry_and_biochemistry/internal/research_groups/andrew_b_greytak/"
+ #   - label: "Twitter"
+ #     icon: "fab fa-fw fa-twitter-square"
+ #     url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/Greytak-Chemistry-Lab"
+ #   - label: "Instagram"
+ #     icon: "fab fa-fw fa-instagram"
+ #     url: "https://instagram.com/"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+ #   - label: "Twitter"
+ #     icon: "fab fa-fw fa-twitter-square"
+ #     url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/Greytak-Chemistry-Lab"
+ #   - label: "Instagram"
+ #     icon: "fab fa-fw fa-instagram"
+ #     url: "https://instagram.com/"
 
 defaults:
   # _posts
@@ -99,6 +101,7 @@ defaults:
       comments: true
       share: true
       related: true
+      mathjax: true
   # _pages
   - scope:
       path: "_pages"
